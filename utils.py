@@ -32,6 +32,7 @@ def get_file_in_folder(folder):
 
 
 def get_annotations(path_to_folder):
+    print('Loading annotations...')
     file_list = get_file_in_folder(path_to_folder)
     annotations = []
     for file in file_list:
