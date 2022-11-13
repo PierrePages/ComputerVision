@@ -51,4 +51,18 @@ def get_images(path_to_folder):
         images.append(img)
     images = np.array(images)
     return images
-        
+
+
+
+def read_classes(file_path):
+    '''
+    Read classes from a file
+    -------
+    input: file path
+    output: a list of classes
+    '''
+    classes = []
+    with open(file_path, 'r') as f:
+        for line in f.readlines():
+            classes.append(line.strip())
+    return classes
